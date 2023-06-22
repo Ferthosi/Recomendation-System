@@ -1,0 +1,34 @@
+.option-div{
+    margin: 100px auto 0px;
+    width: 35%;
+    border: 1px solid #66eaee;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(29, 199, 154);
+    padding: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    z-index: -1;
+    transition: 0.8s;
+    
+    
+
+}
+.option-link{
+    display: block;
+    width: 90%;
+    padding: 10px;
+    border: 2px solid rgb(223, 232, 240);
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 15px auto;
+    display: inline-block;
+    background-color: rgb(107, 219, 195);
+    text-align: center;
+}
+.option-link:hover{
+    transform: translateY(-4%);
+    background-color: aliceblue;
+   
+   
+    
+}

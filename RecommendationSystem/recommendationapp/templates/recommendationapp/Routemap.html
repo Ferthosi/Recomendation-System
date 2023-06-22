@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}
+    Chose your choice of offering data
+{% endblock %}
+
+{% block other_css_link %}
+   <link rel="stylesheet" href="{% static "recommendationapp/Routemap.css" %}?{% now "U" %}">
+{%endblock%}
+
+{% block nav_section %}
+    {% include "nav.html"%}
+{% endblock %}
+
+
+{% block page_content %}
+    <div class = "map-div">
+       <div class ="route">
+        
+         <h3>Dhaka Metro Rail Station and Route Map</h3>
+        
+       </div>
+       
+       <div class="image">
+         <img src="{%static 'rot2.jpg'%}"/>
+         
+       </div>
+       
+         <img src="{%static 'rot3.jpg'%}"/>
+         
+       </div>
+       
+
+
+    </div>
+{% endblock %}

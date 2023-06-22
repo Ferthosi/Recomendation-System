@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}
+    About the Devs
+{% endblock %}
+
+{% block other_css_link %}
+    <link rel="stylesheet" type="text/css" href="{% static "recommendationapp/aboutus3.css" %}?{% now "U" %}">
+{%endblock%}
+
+{% block nav_section %}
+    {% include "nav.html"%}
+{% endblock %}
+
+
+{% block page_content %}
+    <div class="company-details">
+        <h2>Dhaka Mass Transit Company Limited</h2>
+        <p><b>Native Name</b> : ঢাকা মেট্রো </p>
+        <p><b>Locale </b>: Dhaka, Dhaka Division, Bangladesh</p>
+        <p><b>Transit type </b>: Mass Rapid Transit, Light Rapid Transit</p>
+        <p><b>Number of Lines </b>: 1(under construstion & 6(planed)</p>
+        <p><b>Number of Stations </b>: 16 (under construction) & 104 (planned/proposed)</p>
+        <p><b>Key people </b>: Mr. Md. Nazrul Islam (Chairman) & Mr. M. A. N. Siddique(Managing Director)</p>
+        <p><b>Headquarters </b>: Probashi Kallyan Bhaban, Old Elephant Rd, Dhaka, Bangladesh </p>
+        <p><b>Website </b>: www.dmtcl.gov.bd</p>
+        <p><b>Operator(s) </b>: Dhaka Mass Transit Company Ltd.<\p>
+        <p><b>System length </b>: 20.1 km (12.5 mi)(under construction)</p>
+   
+        <div class="section">
+         <img src="{%static 'mlogo.png'%}" />
+         <img src="{%static 'mlogo2.jpg'%}" />
+        </div>
+
+    </div>
+     
+{% endblock %} 

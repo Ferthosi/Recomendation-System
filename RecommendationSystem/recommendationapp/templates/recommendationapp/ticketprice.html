@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load static %}
+{% block page_title %}
+    Chose your choice of offering data
+{% endblock %}
+
+{% block other_css_link %}
+    <link rel="stylesheet" href="{% static "recommendationapp/ticketprice.css" %}?{% now "U" %}">
+{%endblock%}
+
+{% block nav_section %}
+    {% include "nav.html"%}
+{% endblock %}
+
+
+{% block page_content %}
+<div class="container">
+  <div class= "section">
+     <h3>Dhaka Metro Rail Ticket Price Chart</h3>
+     <p>Dhaka Traffic Coordination Authority(DTCA) has published the fare list of how much money will be required to move from one station to aother station. The list was published by DTCA on 8th septermber 20200. Dhaka Metro Rail Fare 2022 chart is now available.</p>
+     <br>
+     </div>
+
+      <div class="section-fare">
+      <img src = "{%static 'farechart1.jpg'%}"/>
+      </div>
+      
+      <div class="section-fare">
+      <img src = "{%static 'ami2.jpg'%}"/>
+      </div>
+      
+      
+    
+</div>
+
+
+{% endblock %}

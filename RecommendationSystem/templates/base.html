@@ -1,0 +1,46 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> {% block page_title %}{% endblock %}</title>
+    <link rel="shortcut icon" href="{% static "C:\Users\FERTHOSI\Desktop\gitd\Recommendation_project_with_AI_Django_Python\RecommendationSystem\static\log.ico" %}" type="image/x-icon">
+    <link rel="icon" href="{% static "C:\Users\FERTHOSI\Desktop\gitd\Recommendation_project_with_AI_Django_Python\RecommendationSystem\static\log.ico" %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static "base.css" %}?{% now "U" %}">
+    {% block other_css_link %}{% endblock %}
+</head>
+<body>
+    <div class="header-container">
+        <header class="header">
+            <a class="logo" href="/"><img height="80px" width="auto" src="{% static "C:\Users\FERTHOSI\Desktop\gitd\Recommendation_project_with_AI_Django_Python\RecommendationSystem\static\images.png" %}" alt="image.png"></a>
+           <h1 class="title">Dhaka Metro Rail Digital Ticketing</h1>
+        </header>
+    </div>
+    <nav class= "nav">
+        <div class="nav-links">
+            <a href="/">Home</a>
+          
+            <a href="/aboutus">Contacts</a>
+        </div>
+        {% block nav_section %}
+            {% include "nav.html"%}
+        {% endblock %}        
+    </nav>
+
+    <div class="content" style= "background-image: url('{%static 'background.jpg'%}');">
+        {% block page_content %} Page wise contents goes here {% endblock %}
+    </div>
+
+
+    <footer>
+        <h3 class="center">Copyright &copy; Dhaka Mass Transit Company Limited </h3>
+    </footer>
+
+
+
+
+</body>
+</html>
